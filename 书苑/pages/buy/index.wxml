@@ -1,0 +1,44 @@
+<!--index.wxml-->
+<view class="container">
+<image class='background' src='../../images/bgimg.jpg' mode='aspectFill'></image>
+  <view class='text'>
+    <view class='lineflag'></view>
+    <text>填写购买信息</text>
+  </view>
+  <!--书名  -->
+  <view class='info'>
+    <text>书名：</text>
+    <input bindblur='bindInputBlur' placeholder='请输入书名'></input>
+  </view>
+  <!--姓名  -->
+  <view class='info'>
+    <text>姓名：</text>
+    <input bindblur='bindInputBlur1' placeholder='请输入姓名'></input>
+  </view>
+  <!--电话  -->
+  <view class='info'>
+    <text>电话：</text>
+    <input bindblur='bindInputBlur2' placeholder='请输入电话'></input>
+  </view>
+  <!--地址  -->
+  <view class='info'>
+    <text>地址：</text>
+    <input bindblur='bindInputBlur3' placeholder='请输入地址'></input>
+  </view>
+
+  <!--按钮  -->
+  <!-- <view class='name'> -->
+  <button bindtap='save'>保 存 信 息</button>
+  <!-- </view> -->
+
+  <!--保存提示信息  -->
+  <view class='tip' hidden="{{hidden}}">
+    <text>您输入的信息为：</text>
+    <text class='username'>书名：{{bname}}</text>
+    <text class='username'>姓名：{{username1}}</text>
+    <text class='phone'>电话：{{phone1}}</text>
+    <text class='address'>地址：{{address1}}</text>
+    <text class='succ'>保存成功！</text>
+  </view>
+
+</view>

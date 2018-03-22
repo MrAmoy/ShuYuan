@@ -1,0 +1,60 @@
+<!--pages/movie/index.wxml-->
+<view class='container'>
+  <!--轮播图  -->
+  <swiper class='swiper_box' indicator-dots='true' autoplay='true' interval='3000' duration='1000'>
+    <swiper-item wx:for="{{image}}" wx:for-item="item">
+      <image src='{{item.path}}'></image>
+    </swiper-item>
+  </swiper>
+
+  <!--文字：热门图书  -->
+  <view class='text'>
+    <view class='lineflag'></view>
+    <text>热门图书</text>
+  </view>
+
+  <!--所有图书信息  -->
+    <navigator wx:for="{{books}}" wx:for-item="item" url='../detail/detail?image={{item.image}}&bname={{item.bname}}&author={{item.author}}&abstract={{item.abstract}}'>
+    <!--每一本图书  -->
+    <view class='item'>
+
+      <!--左边部分：图书封面  -->
+      <view class='item-left'>
+        <image src='{{item.image}}'></image>
+      </view>
+
+      <!--中间部分：书名，作者  -->
+      <view class='item-middle'>
+        <!--书名  -->
+        <view>
+          <text class='name'>《{{item.bname}}》</text>
+        </view>
+        <!--作者  -->
+        <view>
+          <text class='author'>作者：{{item.author}}</text>
+        </view>
+        <!--查看详情  -->
+        <view>
+          <text class='actor'>详情</text>
+        </view>
+
+      </view>
+
+      <!--右边部分：价格和购买  -->
+      <view class='item-right'>
+        <!--价格  -->
+        <view>
+          <text class='price'>{{item.price}}</text>
+        </view>
+        <!--购买  -->
+        <view>
+          <text class='buy'>{{item.buy}}</text>
+        </view>
+
+      </view>
+      
+    </view>
+
+  </navigator>
+
+</view>

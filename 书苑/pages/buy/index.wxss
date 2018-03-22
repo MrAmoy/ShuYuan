@@ -1,0 +1,78 @@
+/**index.wxss**/
+
+.container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10rpx 0;
+  box-sizing: border-box;
+}
+
+.background {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  opacity: 0.3;
+  z-index: -1;
+}
+
+view .text {
+  width: 100%;
+  padding: 10px 12px 10px 10px;
+  color: #656565;
+}
+
+.lineflag {
+  width: 3px;
+  height: 18px;
+  background-color: #09bb07;
+  display: inline-block;
+}
+
+.info {
+  display: flex;
+  flex-direction: row;
+  padding: 20px 30px;
+}
+
+input {
+  margin: 0px 10px;
+  border: 2px solid #ccc;
+  border-radius: 3px;
+  display: inline-table;
+}
+
+button {
+  width: 290px;
+  background-color: #66cd00;
+}
+
+view .text text {
+  margin-left: 10px;
+  line-height: 18px;
+}
+
+.tip {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+  padding: 7px 30px 0px;
+  border: 1px solid #656565;
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  width: 300px;
+  height: 200px;
+  opacity: 0.7;
+}
+
+.tip text {
+  font-size: 14px;
+  margin: 7px 0;
+  line-height: 18px;
+}
+
+.succ {
+  color: #cf616a;
+}

@@ -1,0 +1,28 @@
+<!--pages/detail/detail.wxml-->
+<view class='container'>
+  <!--设置加载动画  -->
+  <!-- <loading hidden="{{hidden}}">加载中...</loading> -->
+  <!--背景图片  -->
+  <image class='background' src='{{image}}' mode='aspectFill'></image>
+  <!--详情页  -->
+  <scroll-view class='container' scroll-y="true">
+    <!--非摘要部分  -->
+    <view class='meta'>
+      <!--书封面  aspectFit：在保证长宽比的前提下，图片在容器中完整的展现出来  -->
+      <image class='poster' src='{{image}}' mode='aspectFit'></image>
+      <!--书名  -->
+      <text class='bname'>{{bname}}</text>
+      <!--作者  -->
+      <text class='author'>作者：{{author}}</text>
+      <!--价格  -->
+      <!-- <text class='info'>价格：{{books.price}}</text> -->
+    </view>
+
+    <!--摘要部分  -->
+    <view class='summary'>
+      <text class='label'>摘要：</text>
+      <text class='content'>{{abstract1}}</text>
+    </view>
+  </scroll-view>
+
+</view>

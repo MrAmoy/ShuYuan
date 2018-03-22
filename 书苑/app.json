@@ -1,0 +1,40 @@
+{
+  "pages": [
+    "pages/splash/index",
+    "pages/books/index",
+    "pages/buy/index",
+    "pages/my/index",
+    "pages/detail/detail",
+    "pages/logs/logs"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "书苑",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "color": "#ddd",
+    "selectedColor": "#3cc51f",
+    "list": [
+      {
+        "pagePath": "pages/books/index",
+        "text": "书单",
+        "iconPath": "images/icon_normal.png",
+        "selectedIconPath": "images/icon_pressed.png"
+      },
+      {
+        "pagePath": "pages/buy/index",
+        "text": "购买",
+        "iconPath": "images/icon_normal.png",
+        "selectedIconPath": "images/icon_pressed.png"
+      },
+      {
+        "pagePath": "pages/my/index",
+        "text": "我的",
+        "iconPath": "images/icon_normal.png",
+        "selectedIconPath": "images/icon_pressed.png"
+      }
+    ]
+  }
+}
